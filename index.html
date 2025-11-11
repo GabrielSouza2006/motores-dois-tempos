@@ -14,11 +14,10 @@
         <nav>
             <ul>
                 <li><a href="index.html"><img src="assets/images/logo.jpg" alt="Logo qualquer"></a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Motores</a></li>
-                <li><a href="#">Vídeo</a></li>
-                <li><a href="#">PDF de motores</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#pdf">PDF de motores</a></li>
+                <li><a href="formulario-pdf.html">Contato</a></li>
             </ul>
         </nav>
 
@@ -29,23 +28,69 @@
     </header>
 
     <main>
-        <section>
-            <article>
-                <h2>Quem somos?</h2>
-                <p>
-                    Na M2M4, somos especialistas em motores de motos, oferecendo serviços de manutenção,
-                    retífica e preparação com alto padrão técnico. Trabalhamos com equipamentos de precisão e técnicas
-                    atualizadas para garantir o melhor desempenho, durabilidade e eficiência em cada motor.
-                    <br>
-                    Nossa equipe é formada por profissionais apaixonados por duas rodas e comprometidos com a excelência
-                    mecânica. Cada detalhe é tratado com cuidado e conhecimento, para que sua moto entregue sempre o
-                    máximo em potência e confiabilidade nas ruas e nas pistas.
-                </p>
-                <img src="" alt="">
-            </article>
+        <section class="section-1">
+            <div>
+                <article id="sobre">
+                    <h2>Quem somos?</h2>
+                    <p>
+                        Na M2M4, somos especialistas em motores de motos, oferecendo serviços de manutenção,
+                        retífica e preparação com alto padrão técnico. Trabalhamos com equipamentos de precisão e
+                        técnicas
+                        atualizadas para garantir o melhor desempenho, durabilidade e eficiência em cada motor.
+                        <br> <br>
+                        Nossa equipe é formada por profissionais apaixonados por duas rodas e comprometidos com a
+                        excelência
+                        mecânica. Cada detalhe é tratado com cuidado e conhecimento, para que sua moto entregue sempre o
+                        máximo em potência e confiabilidade nas ruas e nas pistas.
+                    </p>
+                </article>
+                <img src="assets/images/logo.jpg" alt="Logo">
+            </div>
+        </section>
+
+        <section class="section-2" id="video">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/F5XUfSrvKxE?si=c9fTxdHZ9587ekUX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="section-3" id="pdf">
+            <h2>Baixar pdf</h2>
+            <a href="formulario-pdf.html">Clique aqui para baixar</a>
+            <p>Você será redirecionado para uma página com um formulário, preencha-o e você terá acesso ao PDF.</p>
         </section>
     </main>
 
+    <footer>
+        <article class="article-1">
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Vídeo</a></li>
+                <li><a href="">Baixar PDF</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.373484896042!2d-46.835279124892324!3d-23.519065678828817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf002554b8d21d%3A0x7145a8ed38f87584!2sUnidade%20Est%C3%A1cio!5e0!3m2!1spt-BR!2sbr!4v1762902951255!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <img src="assets/images/logo.jpg" alt="Logo">
+        </article>
+
+        <article class="article-2">
+            <h2>Inscreva-se para receber notícias.</h2>
+            <form action="#" id="form-new" name="form-new">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </footer>
+
+    <script>
+        
+    </script>
 </body>
 
 </html>
