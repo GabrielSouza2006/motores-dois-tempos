@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulário de contato</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="assets/images/logo.jpg" alt="Logo qualquer"></a></li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="index.html">Vídeo</a></li>
+                <li><a href="#">PDF de motores</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-form">
+            <h2>Contate-nos</h2>
+
+            <form class="form-contato" id="form-contato" name="form-contato" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" class="input-padrao" placeholder="Seu nome aqui" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="input-padrao" placeholder="seu.email@exemplo.com"
+                    required>
+                <br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" class="input-padrao" placeholder="********" required>
+                <br>
+
+                <label for="idade">Sua Idade:</label>
+                <input type="number" id="idade" name="idade" class="input-padrao" min="18" max="99" required>
+                <br>
+
+                <p>Deseja receber o PDF?</p>
+                <div class="div-1">
+                    <input type="radio" id="sim" name="receber-pdf" value="sim" required>
+                    <label for="Sim">Sim</label>
+                    <input type="radio" id="nao" name="receber-pdf" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <br>
+
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40"
+                    placeholder="Digite sua mensagem aqui..."></textarea>
+                <br>
+
+                <div>
+                    <button type="submit">Enviar Formulário</button>
+                    <button type="reset">Limpar Campos</button>
+                </div>
+
+                <div><a href="assets/pdf/Motores_Dois_Tempos.pdf" download class="btn-baixar">Baixar PDF</a></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <article class="article-1">
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="index.html">Vídeo</a></li>
+                <li><a href="#">Baixar PDF</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.373484896042!2d-46.835279124892324!3d-23.519065678828817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf002554b8d21d%3A0x7145a8ed38f87584!2sUnidade%20Est%C3%A1cio!5e0!3m2!1spt-BR!2sbr!4v1762902951255!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <img src="assets/images/logo.jpg" alt="Logo">
+        </article>
+
+        <article class="article-2">
+            <h2>Inscreva-se para receber notícias.</h2>
+            <form action="#" id="form-new" name="form-new">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </footer>
+
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const desejaPDF = document.querySelector('input[name="receber-pdf"]:checked');
+            const botaoPDF = document.querySelector('.btn-baixar');
+
+            if (desejaPDF && desejaPDF.value === 'sim') {
+                botaoPDF.style.display = 'block';
+                alert('Formulário enviado! Agora você pode baixar o PDF.');
+            } else {
+                botaoPDF.style.display = 'none';
+                alert('Formulário enviado! Você optou por não receber o PDF.');
+            }
+
+            document.getElementById('form-contato').reset();
+
+        });
+    </script>
+</body>
+
+</html>

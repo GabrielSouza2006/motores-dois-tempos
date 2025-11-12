@@ -25,7 +25,7 @@ header img {
 }
 
 header nav {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +216,7 @@ footer {
     padding: 50px;
 }
 
-footer .article-1{
+footer .article-1 {
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -224,19 +224,19 @@ footer .article-1{
     align-items: center;
 }
 
-footer .article-1 ul li a{
+footer .article-1 ul li a {
     color: #FFF;
     font-size: 22px;
     line-height: 30px;
 }
 
-footer .article-1 img{
+footer .article-1 img {
     width: 20%;
     height: 230px;
     border-radius: 500px;
 }
 
-footer .article-2{
+footer .article-2 {
     width: 100%;
     margin-top: 70px;
     display: flex;
@@ -244,25 +244,26 @@ footer .article-2{
     align-items: center;
 }
 
-footer .article-2 h2{
+footer .article-2 h2 {
     color: #FFF;
     font-size: 30px;
     padding-bottom: 20px;
 }
 
-footer .article-2 form{
+footer .article-2 form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-footer .article-2 form input, button{
+footer .article-2 form input,
+button {
     margin: 0px;
     padding: 0px;
 }
 
-footer .article-2 form input{
+footer .article-2 form input {
     width: 300px;
     height: 40px;
     padding-left: 20px;
@@ -270,7 +271,7 @@ footer .article-2 form input{
     border-radius: 5px 0px 0px 5px;
 }
 
-footer .article-2 form button{
+footer .article-2 form button {
     width: 150px;
     height: 40px;
     font-size: 15px;
@@ -280,4 +281,94 @@ footer .article-2 form button{
     background-color: #000;
     color: #FFF;
     border: #f1f1f1 2px solid;
+}
+
+/* PÁGINA FORM */
+.section-form {
+    padding-top: 100px;
+    width: 60%;
+}
+
+form {
+    border: #f1f1f1 2px solid;
+    border-radius: 35px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #FFF;
+}
+
+form label, p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+form .input-padrao,
+textarea {
+    width: 98%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+textarea{
+    height: 100px;
+    padding-top: 20px;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-contato button{
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: #000;
+    color: #FFF;
+    width: 30%;
+    height: 40px;
+    border: #f1f1f1 2px solid;
+    border-radius: 40px;
+
+    transition: all 0.4s ease;
+}
+
+form button:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+.div-1{
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.section-form .btn-baixar {
+    margin-top: 40px;
+    display: none;
+}
+
+.section-form a {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #cecece;
+    border-radius: 40px;
+    padding: 12px 40px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.section-form a:hover {
+    padding: 14px 44px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px 4px #ffffff;
 }
