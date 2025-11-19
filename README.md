@@ -1,3 +1,3 @@
-Motores dois tempos.
+Projeto - Motores dois tempos.
 
-Página informacional sobre motores dois tempos.
+Página informacional sobre motores do tipo dois tempos.
