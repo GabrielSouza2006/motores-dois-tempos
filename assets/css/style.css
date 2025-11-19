@@ -334,6 +334,13 @@ form {
     color: #FFF;
 }
 
+form{
+    span{
+        color: red;
+        font-size: 15px;
+    }
+}
+
 form label,
 p {
     font-size: 20px;
