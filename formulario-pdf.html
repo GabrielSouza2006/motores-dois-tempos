@@ -35,12 +35,8 @@
                     required>
                 <br>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" class="input-padrao" placeholder="********" required>
-                <br>
-
-                <label for="idade">Sua Idade:</label>
-                <input type="number" id="idade" name="idade" class="input-padrao" min="18" max="99" required>
+                <label for="telefone">Seu telefone:</label>
+                <input type="tel" id="telefone" name="telefone" class="input-padrao" placeholder="(xx) xxxx-xxxx" required>
                 <br>
 
                 <p>Deseja receber o PDF?</p>
@@ -93,25 +89,7 @@
         </article>
     </footer>
 
-    <script>
-        document.getElementById('form-contato').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const desejaPDF = document.querySelector('input[name="receber-pdf"]:checked');
-            const botaoPDF = document.querySelector('.btn-baixar');
-
-            if (desejaPDF && desejaPDF.value === 'sim') {
-                botaoPDF.style.display = 'block';
-                alert('Formulário enviado! Agora você pode baixar o PDF.');
-            } else {
-                botaoPDF.style.display = 'none';
-                alert('Formulário enviado! Você optou por não receber o PDF.');
-            }
-
-            document.getElementById('form-contato').reset();
-
-        });
-    </script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
